@@ -57,7 +57,7 @@ shinyServer(function(input, output,sessoin) {
     headline <- tm_map(headline, removeWords, stopwords("italian")) 
     headline <- tm_map(headline, stemDocument, language = "italian") 
     
-    # Trigrams
+    # Bigrams
     BigramTokenizer <- function(x) NGramTokenizer(x, Weka_control(min = 2, max = 2))
     inputNgrams <- BigramTokenizer(headline)
     
