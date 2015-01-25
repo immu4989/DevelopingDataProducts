@@ -3,7 +3,7 @@ library(shiny)
 langs <- c("italian")
 
 shinyUI(fluidPage(
-  
+  includeMarkdown("README.md"),
   headerPanel("Headline News - Categorization"),
   sidebarPanel(
     
