@@ -3,9 +3,13 @@ library(shiny)
 langs <- c("italian")
 
 shinyUI(fluidPage(
-  includeMarkdown("README.md"),
   headerPanel("Headline News - Categorization"),
   sidebarPanel(
+    wellPanel(
+      helpText(   a("Click Here to read the documentation",
+                    href="https://github.com/leandrowar/DevelopingDataProducts/blob/master/README.md")
+      )
+    ),
     
     textInput("headline", "Headline - Please, insert a headline in Italian", 
               value = "Moscovici: Piu flessibilita allItalia ma fate gli sforzi per le riforme"),
