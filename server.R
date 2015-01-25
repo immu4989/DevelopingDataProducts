@@ -125,11 +125,11 @@ shinyServer(function(input, output,sessoin) {
     ##################################
     if ((ratingEco > ratingSpo) & (ratingEco > ratingCul))
     {
-      return('The subject is about Economia')
+      return('about Economia')
     }else if ((ratingSpo > ratingCul) & (ratingSpo > ratingEco)){
-      return('The subject is about Sport' )
+      return('about Sports' )
     }else{
-      return('The subject is about Culture'  )
+      return('about Culture'  )
     }
   }
   
